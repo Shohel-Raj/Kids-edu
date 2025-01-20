@@ -33,7 +33,9 @@
     display: flex;
    
 }
-
+.d-none{
+    display: none;
+}
 
 /*------------------------- Header sction -----------------------*/
 
@@ -80,5 +82,30 @@
 }
 .header nav ul li a{
     text-decoration: none;
+
+}
+
+
+@media screen and (max-width: 576px) {
+    .container{
+        width: 360px;
+    }
+    .d-none{
+        display: block;
+        width: 30px;
+    }
+    .d-none i{
+        font-size: 40px;
+    }
+    .header nav ul{
+        display: none;
+    }
+
+    .btn-sec{
+        display: none;
+    }
+    .logo h3{
+        display: none;
+    }
 
 }
