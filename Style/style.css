@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 .site-font {
@@ -6,6 +6,11 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
+.p-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
 *{
     padding: 0;
@@ -44,6 +49,8 @@
 }
 .sec-bg{
     background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-position: top left;
 
 }
 
@@ -127,6 +134,7 @@
 #standad{
     margin-bottom: 25px;
     margin-top: 25px;
+    padding-top: 25px;
 }
 
 .sd-title{
@@ -136,6 +144,89 @@
     font-size: 2.85rem;
     font-weight: bold;
 }
+.card-box{
+    margin-top: 25px;
+}
+.card-box .card{
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #DEF5FF 0%, #fff 40%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 40px;
+    margin-right: 28px;
+}
+
+.card-box .card img{
+    width: 137px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+.card-box .card h3{
+    font-size: 1.56rem;
+    line-height: 30px;
+    font-weight: bold;
+    color: #202020;
+    margin-bottom: 15px;
+
+}
+.card-box .card p{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card-box .card button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #64C8FF;
+}
+.card.card1 {
+    background: linear-gradient(to bottom, #FFF4DC 0%, #fff 40%);
+}
+.card.card1 button{
+    color: #F0AA00;
+}
+.card.card2 {
+    background: linear-gradient(to bottom, #F2E8FF 0%, #fff 40%);
+    margin-right: 0px;
+}
+.card.card2 button{
+    color: #8700FF;
+}
+.scroll-icon{
+    justify-content: center;
+    margin: 50px 0px 50px 0px;
+    gap: 10px;
+}
+.scroll-icon .icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #FEA301;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+.scroll-icon .icon:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: rotate(360deg);
+}
+
+.scroll-icon .icon i{
+    font-size: 1.85rem;
+    line-height: 45px;
+}
+
 
 
 /* ------------------------rsponsive paart ----------------------- */
@@ -180,5 +271,18 @@
     }
     .hero-img img{
         width: 100%;
+    }
+
+    /* ---------------------standerd section------------- */
+    .card-box{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .scroll-icon{
+        display: none;
+    }
+    .sd-title h3 {
+        font-size: 2rem;
+        font-weight: bold;
     }
 }
