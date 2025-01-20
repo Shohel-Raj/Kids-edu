@@ -36,6 +36,16 @@
 .d-none{
     display: none;
 }
+.orange{
+    color: #FEA301;
+}
+.sky-blue{
+    color: #01ACFD;
+}
+.sec-bg{
+    background-image: url(../assets/bg.png);
+
+}
 
 /*------------------------- Header sction -----------------------*/
 
@@ -85,8 +95,52 @@
 
 }
 
+/* ---------------------- hero secion ---------------------- */
+.hero-conant{
+    max-width:640px;
+    margin-top: 174px;
+}
 
+.hero-conant h3{
+    font-size: 3.5rem;
+    padding-right: 54px;
+    line-height: 60px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.hero-conant p{
+    color: #111111;
+    font-size: 1.25rem;
+    padding-right: 20px;
+    display: block;
+    margin-bottom: 15px;
+}
+.hero-conant .btn{
+    background-color: #111111;
+    color: #fff;
+}
+.hero-img{
+    width: 469px;
+}
+
+/* ----------------- Standard section ----------------- */
+#standad{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.sd-title{
+    text-align: center;
+}
+.sd-title h3{
+    font-size: 2.85rem;
+    font-weight: bold;
+}
+
+
+/* ------------------------rsponsive paart ----------------------- */
 @media screen and (max-width: 576px) {
+    /* ---------------- header --------------- */
     .container{
         width: 360px;
     }
@@ -108,4 +162,23 @@
         display: none;
     }
 
+    /* ------------------ hero section ----------- */
+
+    .hero-section{
+        flex-direction: column-reverse;
+        
+    }
+    .hero-conant{
+        margin-top: 15px;
+        text-align: center;
+    }
+    .hero-conant h3{
+        padding: 0;
+    }
+    .hero-img{
+        width: 340px;
+    }
+    .hero-img img{
+        width: 100%;
+    }
 }
