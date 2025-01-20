@@ -36,7 +36,9 @@
 
 .d-flex{
     display: flex;
-   
+}
+.d-grid{
+    display: grid;
 }
 .d-none{
     display: none;
@@ -50,7 +52,7 @@
 .sec-bg{
     background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: top right;
 
 }
 
@@ -131,10 +133,8 @@
 }
 
 /* ----------------- Standard section ----------------- */
-#standad{
-    margin-bottom: 25px;
-    margin-top: 25px;
-    padding-top: 25px;
+section#standad\ {
+    margin: 55px 0;
 }
 
 .sd-title{
@@ -228,6 +228,128 @@
 }
 
 
+/* ------------------------ Our story -------------- */
+
+#ourStor{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 100%;
+    z-index: 1;
+}
+.sec-bg-colour {
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.2) 0%, #fff 100%);
+}
+.photo-sec{
+    padding-bottom: 50px;
+    gap: 15px;
+    margin-top: 25px;
+}
+.photo-sec .left{
+    width: 500px;
+}
+.photo-sec .left .card .upper img{
+    width: 100%;
+}
+.photo-sec .left .card .upper{
+    position: relative;
+}
+.photo-sec .left .card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+.p-btn {
+    background: #3CD8E8;
+    color: #fff;
+    padding: 13px;
+    border-radius: 45px;
+    border: none;
+    position: absolute;
+    bottom: -14px;
+    left: 50px;
+}
+.photo-sec .left .card .lower {
+    padding: 38px;
+    background: white;
+    padding-bottom: 57px;
+    margin-top: -8px;
+}
+.photo-sec .left .card .lower h3{
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+
+}
+.photo-sec .left .card .lower p{
+    font-size: 0.99rem;
+    color: #666666;
+    padding-bottom: 50px;
+}
+.upper-l{
+    position: relative;
+}
+
+.l-btn {
+    background: #95B226;
+    color: #fff;
+    padding: 13px;
+    border-radius: 45px;
+    border: none;
+    position: absolute;
+    bottom: -14px;
+    left: 50px;
+}
+.l-btn1{
+    background-color: #5D58F0;
+    bottom: -17px;
+}
+.l-btn2{
+    background-color: #F0AA00;
+    bottom: -26px;
+}
+.l-btn3{
+    background-color: coral;
+    bottom: -26px;
+}
+.photo-sec .right .card .lower {
+    padding: 38px;
+    background: white;
+    margin-top: -8px;
+}
+.photo-sec .right {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.photo-sec .right .card{
+    width: 290px;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.photo-sec .right .card .upper-l{
+    height: 177px;    
+}
+.photo-sec .right .card .upper-l img{
+    width: 100%;
+}
+
+.photo-sec .right .card .lower h3{
+
+    font-size: 0.99rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+
+}
+
+
+
+
+
 
 /* ------------------------rsponsive paart ----------------------- */
 @media screen and (max-width: 576px) {
@@ -284,5 +406,17 @@
     .sd-title h3 {
         font-size: 2rem;
         font-weight: bold;
+    }
+
+    /* ---------------- our story ------------------ */
+    .photo-sec{
+        justify-content: center;
+    }
+    .photo-sec .left{
+        display: none;
+    }
+    .photo-sec .right {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     }
 }
