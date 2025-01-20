@@ -234,13 +234,12 @@ section#standad\ {
     margin-top: 50px;
     margin-bottom: 50px;
     background-image: url(../assets/bg.png);
-    background-repeat: no-repeat;
-    background-position: top center;
+    background-repeat: repeat;
     opacity: 100%;
     z-index: 1;
 }
 .sec-bg-colour {
-    background: linear-gradient(to top, rgba(254, 163, 1, 0.2) 0%, #fff 100%);
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3) 0%, rgba(255,255,255,0.1));
 }
 .photo-sec{
     padding-bottom: 50px;
@@ -344,6 +343,13 @@ section#standad\ {
     margin-bottom: 10px;
     color: #000000;
 
+}
+.button-sec {
+    text-align: center;
+    padding-bottom: 14px;
+}
+.button-sec .btn{
+    background: #000;
 }
 
 
