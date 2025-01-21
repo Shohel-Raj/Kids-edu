@@ -513,3 +513,19 @@ section#standad\ {
 
     }
 }
+
+@media screen and (max-width: 368px) {
+    .container{
+        width: 340px;
+    }
+    .photo-sec .right .card {
+        width: 164px;
+        height: 247px;
+    }
+    .l-btn {
+        bottom: -114px;
+    }
+    .footer {
+        margin-left: 5px;
+    }
+}
